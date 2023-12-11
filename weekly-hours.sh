@@ -1,7 +1,7 @@
 #!/bin/bash
 
-ACTIVEWEEK=$(ls -l docs/daily | tail -1 | awk '{ print $10 }')
+ACTIVEWEEK=$(ls -1A docs/daily | tail -1)
 
 echo "ADDING WEEKLY HOURS: ${ACTIVEWEEK}"
 
-awk '/hours/' docs/daily/${ACTIVEWEEK}/* | awk 'sum+=$1; END{print sum " hours total"}'
+awk '/hours/' docs/daily/${ACTIVEWEEK}/* | awk 'BEGIN{sum=0}; sum+=$1; END{print sum " hours total"}'

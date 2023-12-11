@@ -1,0 +1,7 @@
+site_name: wiki
+theme:
+    name: material
+    palette:
+        scheme: slate
+markdown_extensions:
+    - pymdownx.tilde

@@ -7,8 +7,12 @@
     python3 --version
     pip3 --version
     ```
-2. `pip3 install mkdocs`
-3. `pip3 install mkdocs-material`
+2. _Optional:_ set up a Python virtual environment
+   - `python3 -m venv .venv` - initialize the virtual environment
+   - `source .venv/bin/activate` - active the virtual environment
+3. Install dependencies
+   - `pip3 install mkdocs`
+   - `pip3 install mkdocs-material`
 4. ...and you're off to the races!
 
 ## Running mkdocs

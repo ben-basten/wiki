@@ -1,3 +1,5 @@
 .DS_STORE
 .vscode
 todo.txt.bak
+.venv
+site
